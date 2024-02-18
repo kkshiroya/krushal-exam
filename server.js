@@ -18,8 +18,6 @@ app.use(bodyParser.json());
 
 app.use(cookieParser());
 
-app.use("/v1", routes);
-
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
